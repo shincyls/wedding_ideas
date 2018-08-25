@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  code: MyString
+  remarks: MyString
+  colors: MyString
+  price: 1.5
+  stock: 
+  ms_length: 1.5
+  ms_bust: 1.5
+  ms_waist: 1.5
+  ms_hip: 1.5
+
+two:
+  name: MyString
+  code: MyString
+  remarks: MyString
+  colors: MyString
+  price: 1.5
+  stock: 
+  ms_length: 1.5
+  ms_bust: 1.5
+  ms_waist: 1.5
+  ms_hip: 1.5

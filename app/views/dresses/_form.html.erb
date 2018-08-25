@@ -1,0 +1,69 @@
+  <%= form_with(model: dress, local: true, id: "new_dress") do |form| %>
+
+    <div class="form-group row">
+      <label class="col-sm-4 col-form-label">Name</label>
+      <div class="col-sm-8">
+        <%= form.text_field :name, placeholder: "Dress Name", class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label class="col-sm-4 col-form-label">Code</label>
+      <div class="col-sm-8">
+        <%= form.text_field :code, placeholder: "Dress Code", class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label class="col-sm-4 col-form-label">Code</label>
+      <div class="col-sm-8">
+        <%= form.text_field :remark, placeholder: "Remarks", class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label class="col-sm-4 col-form-label">Color</label>
+      <div class="col-sm-8">
+        <%= form.text_field :colors, placeholder: "Colors", class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label class="col-sm-4 col-form-label">Price</label>
+      <div class="col-sm-8">
+        <%= form.text_field :price, placeholder: "Price in MYR", class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label class="col-sm-4 col-form-label">Stock</label>
+      <div class="col-sm-8">
+        <%= form.text_field :stock, placeholder: "Available Stock", class: "form-control" %>
+      </div>
+    </div>
+
+
+    <div class="form-group row">
+      <label class="col-sm-4 col-form-label">Measurement</label>
+      <div class="col-sm-4">
+        <%= form.text_field :ms_length, placeholder: "Length(cm)", class: "form-control" %>
+      </div>
+      <div class="col-sm-4">
+        <%= form.text_field :ms_bust, placeholder: "Bust(cm)", class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label class="col-sm-4 col-form-label"></label>
+      <div class="col-sm-4">
+        <%= form.text_field :ms_waist, placeholder: "Waist(cm)", class: "form-control" %>
+      </div>
+      <div class="col-sm-4">
+        <%= form.text_field :ms_hip, placeholder: "Hip(cm)", class: "form-control" %>
+      </div>
+    </div>
+
+  <% end %>
+
+  
+

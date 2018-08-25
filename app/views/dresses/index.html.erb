@@ -1,0 +1,64 @@
+<br><br>
+
+
+<div class="container">
+  <h1>Dresses</h1> <%= link_to 'Add Dress', new_dress_path,  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window'}  %> <p id="notice"><%= notice %></p>
+
+  <table class="table table-striped thead-dark table-responsive">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Code</th>
+        <th>Remarks</th>
+        <th>Colors</th>
+        <th>Price</th>
+        <th>Stock</th>
+        <th>Length</th>
+        <th>Bust</th>
+        <th>Waist</th>
+        <th>Hip</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @dresses.each do |dress| %>
+        <tr>
+          <td><%= dress.name %></td>
+          <td><%= dress.code %></td>
+          <td><%= dress.remarks %></td>
+          <td><%= dress.colors %></td>
+          <td><%= dress.price %></td>
+          <td><%= dress.stock %></td>
+          <td><%= dress.ms_length %></td>
+          <td><%= dress.ms_bust %></td>
+          <td><%= dress.ms_waist %></td>
+          <td><%= dress.ms_hip %></td>
+          <td><%= link_to 'Show', dress, {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window'} %></td>
+          <td><%= link_to 'Edit', edit_dress_path(dress), {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window'} %></td>
+          <td><%= link_to 'Delete', dress, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <div id="modal-window" class="modal hide fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title"></h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button id="submit-form" type="submit" form="new_dress" class="btn btn-primary">Save</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
