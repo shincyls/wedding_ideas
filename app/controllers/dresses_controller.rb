@@ -4,7 +4,7 @@ class DressesController < ApplicationController
   # GET /dresses
   # GET /dresses.json
   def index
-    @navigate = "navbar-shrink"
+    navbar_attr = "navbar-shrink"
     @dresses = Dress.all
   end
 

@@ -37,7 +37,7 @@ gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 
 gem 'popper_js', '~> 1.14', '>= 1.14.3'
 
-gem 'clearance', '~> 1.16', '>= 1.16.1'
+gem 'devise', '~> 4.5'
 
 gem 'omniauth-google-oauth2', '~> 0.5.3'
 
