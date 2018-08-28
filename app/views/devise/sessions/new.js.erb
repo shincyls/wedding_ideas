@@ -1,0 +1,5 @@
+$("#modal-window").find(".modal-body").html("<%= j (render 'new') %>");
+$("#modal-window").find(".modal-title").html("Sign In");
+$("#submit-form").attr("form", "new_user");
+$("#submit-form").html("Submit");
+$("#modal-window").modal();

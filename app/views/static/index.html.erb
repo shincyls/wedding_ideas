@@ -9,6 +9,10 @@
       <br><br><br><br><br>
     </header>
 
+    <!-- Notice -->
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
     <!-- Services -->
     <section id="services">
       <div class="container">
@@ -308,6 +312,10 @@
         </div>
       </div>
     </section>
+
+<%= javascript_include_tag "static", "data-turbolinks-track" => true  %>
+
+<%= render template: "static/modal" %>
 
     
 

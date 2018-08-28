@@ -3,6 +3,7 @@ class CreateDresses < ActiveRecord::Migration[5.2]
     create_table :dresses do |t|
       t.string :name
       t.string :code
+      t.string :type
       t.string :remarks
       t.string :colors
       t.float :price

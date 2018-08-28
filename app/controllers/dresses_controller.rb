@@ -4,7 +4,6 @@ class DressesController < ApplicationController
   # GET /dresses
   # GET /dresses.json
   def index
-    navbar_attr = "navbar-shrink"
     @dresses = Dress.all
   end
 
@@ -23,10 +22,10 @@ class DressesController < ApplicationController
 
     @dress = Dress.new
 
-    respond_to do |format|
-      format.html
-      format.js {render layout: false}
-    end
+    # respond_to do |format|
+    #   format.html
+    #   format.js {render layout: false}
+    # end
 
   end
 

@@ -49,6 +49,8 @@ gem 'kaminari', '~> 1.1', '>= 1.1.1'
 
 gem 'carrierwave', '~> 1.2', '>= 1.2.3'
 
+gem 'rails_admin', '~> 1.4', '>= 1.4.1'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
