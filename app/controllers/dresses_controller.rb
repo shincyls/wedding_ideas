@@ -52,6 +52,7 @@ class DressesController < ApplicationController
   # PATCH/PUT /dresses/1
   # PATCH/PUT /dresses/1.json
   def update
+    @dress.images.attach(images_param) if images_param.present?
     respond_to do |format|
       if @dress.update(dress_params)
         format.html { redirect_to dresses_url, notice: 'Dress was successfully updated.' }
@@ -86,6 +87,6 @@ class DressesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def dress_params
-      params.require(:dress).permit(:name, :code, :remarks, :colors, :price, :stock, :ms_length, :ms_bust, :ms_waist, :ms_hip)
+      params.require(:dress).permit(:name, :code, :remarks, :colors, :price, :stock, :ms_length, :ms_bust, :ms_waist, :ms_hip, images: [])
     end
 end

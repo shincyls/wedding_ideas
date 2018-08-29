@@ -14,11 +14,25 @@
   </div>
 
   <% if devise_mapping.rememberable? -%>
-    <div class="field">
+    <div class="col-sm-4"></div>
+    <div class="field col-sm-8">
       <%= f.check_box :remember_me %>
       <%= f.label :remember_me %>
     </div>
   <% end -%>
+
+<div class="row">
+  <div class="col-sm-6">
+    <a class="btn btn-block btn-social btn-facebook">
+      <span class="fab fa-facebook"></span> Sign in with Facebook
+    </a>
+  </div>
+  <div class="col-sm-6">
+    <a class="btn btn-block btn-social btn-google">
+      <span class="fab fa-google"></span> Sign in with Google
+    </a>
+  </div>
+</div>
 
 <% end %>
 

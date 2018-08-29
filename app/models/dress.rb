@@ -1,2 +1,3 @@
 class Dress < ApplicationRecord
+
 end
